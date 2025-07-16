@@ -36,7 +36,9 @@ body{
     color: #221f21;
     border: none;
 }
-
+.boxes:hover{
+    opacity: 0.5; 
+}
 #reset-btn{
     display: flex;
     justify-content: center;
