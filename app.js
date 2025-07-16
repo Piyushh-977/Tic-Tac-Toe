@@ -31,6 +31,7 @@ boxe.forEach((box) => {
             valueo = true;
         }
         box.disabled = true;
+        checkwinner();
     });
 });
 
@@ -53,7 +54,7 @@ const checkwinner = () => {
 
         if (pos1val != "" && pos2val != "" && pos3val != "") {
             if (pos1val === pos2val && pos2val === pos3val) {
-                msg.innerText = `WINNER IS ${posval1}`;
+                msg.innerText = `WINNER IS ${pos1val}`;
                 msgcontainer.classList.remove("hide");
                 disableboxes();
             }
